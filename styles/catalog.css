@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul[data-filter="Westcott"] li:not(.Westcott),
+ul[data-filter="Boehme"] li:not(.Boehme),
+ul[data-filter="anonymous"] li:not(.anonymous),
+ul[data-filter="Oetinger"] li:not(.Oetinger),
+ul[data-filter="Drusius"] li:not(.Drusius),
+ul[data-filter="More"] li:not(.More)
+{
+  display:none;
+}
+
+ul[data-filter="eerder"] li:not(.eerder),
+ul[data-filter="j1600-1699"] li:not(.j1600-1699),
+ul[data-filter="j1700-1799"] li:not(.j1700-1799),
+ul[data-filter="j1800-1899"] li:not(.j1800-1899),
+ul[data-filter="j1900-1999"] li:not(.j1900-1999)
+{
+  display:none;
+}
+
+ul[data-filter="London"] li:not(.London),
+ul[data-filter="Parijs"] li:not(.Parijs),
+ul[data-filter="Amsterdam"] li:not(.Amsterdam),
+ul[data-filter="Stuttgart"] li:not(.Stuttgart),
+ul[data-filter="Franeker"] li:not(.Franeker)
+{
+  display:none;
+}
+
+
+main {
+
+    background-image: url(../assets/efmbg1.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    /* display:flex; */
+
+    form {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        gap: 5px;
+        /* background-color: rgb(0, 38, 70); */
+        padding: 10px;
+        border-radius: 10px;
+        /* flex-wrap: wrap; */
+
+
+        .filter {
+            width: 300%;
+            /* flex-grow: 1; */
+            border-radius: 5px;
+            border: .1em solid var(--text-color-lightbg);
+            background-color: var(--primary-detail-color);
+            color: var(--text-color-darkbg);
+        }
+
+        .search {
+            width: 300%;
+            display: flex;
+            /* border: .1em black solid; */
+            flex-grow: 1;
+
+            input {
+                border: .1em solid var(--text-color-lightbg);
+                border-radius: 5px;
+            }
+
+        }
+    }
+
+    /* lijst met artikelen */
+
+    ul {
+        display: grid;
+        gap: 3em;
+        margin: 2em;
+        
+
+        @media (min-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        li {
+            list-style-type: ' ';
+            list-style-image: unset;
+        }
+    }
+
+    article {
+        --art-layout:
+            "heading img"
+            "paragraaf img"
+            "paragraaf button";
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto max-content;
+
+        grid-template-areas: var(--art-layout);
+
+        column-gap: 1em;
+        padding: 10px;
+        border-radius: 10px;
+        /* border-top: 1px solid white;
+        border-left: 1px solid white; */
+        box-shadow: 5px 5px 10px black;
+        backdrop-filter: blur(4px);
+        background-color: #001B3299;
+
+        &:nth-of-type(even) {
+            grid-template-areas: var(--art-layout);
+        }
+
+        @media (min-width: 600px) {
+
+            /* &:nth-of-type(4n + 1),
+            &:nth-of-type(4n + 2) {
+                grid-template-areas: var(--art-layout-lr);
+            }
+
+            &:nth-of-type(4n + 3),
+            &:nth-of-type(4n + 4) {
+                grid-template-areas: var(--art-layout-lr);
+            } */
+        }
+
+        @media (min-width: 1000px) {
+
+            /* &:nth-of-type(6n + 1),
+            &:nth-of-type(6n + 2),
+            &:nth-of-type(6n + 3) {
+                grid-template-areas: var(--art-layout-lr);
+            }
+
+            &:nth-of-type(6n + 4),
+            &:nth-of-type(6n + 5),
+            &:nth-of-type(6n + 6) {
+                grid-template-areas: var(--art-layout-lr);
+            } */
+        }
+
+        img {
+            grid-area: img;
+            width: 100%;
+            display: flex;
+            align-self: center;
+        }
+
+        h2 {
+            margin: 15px 0 0 10px;
+            grid-area: heading;
+            color: var(--text-color-darkbg);
+            text-shadow: 2px 2px 2px black;
+        }
+
+        p {
+            margin: 0 0 0 10px;
+            grid-area: paragraaf;
+            color: var(--text-color-darkbg);
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .meer {
+            grid-area: button;
+            justify-self: end;
+            align-self: end;
+            border-top: solid white 1px;
+            border-left: solid white 1px;
+            box-shadow: 3px 3px 8px black;
+            border-radius: 5px;
+            width: fit-content;
+            height: fit-content;
+            padding: 0.3em;
+            text-decoration: none;
+            color: var(--text-color-darkbg);
+            text-shadow: 2px 2px 2px black;
+        }
+    }
+}
