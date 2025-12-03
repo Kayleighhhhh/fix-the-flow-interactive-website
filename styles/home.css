@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-main);
+    color: var(--text-color-darkbg);
+}
+
+main {
+    .home {
+        background-image: url(../assets/huis1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 40em;
+
+        display: grid;
+        grid-template-rows: 1fr max-content;
+
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-image:
+                linear-gradient(180deg,
+                    var(--primary-detail-color)25%,
+                    transparent 85%);
+        }
+
+        h2 {
+            z-index: 2;
+            position: relative;
+            margin: 0 1em;
+            font-weight: 400;
+            grid-column: 1/3;
+        }
+
+        .info {
+            z-index: 2;
+            position: relative;
+            background-color: #001B3299;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            padding: 0 1em;
+            text-align: right;
+            border-radius: 15px 0 0 0;
+
+            @media (min-width: 700px) {
+                border-radius: 15px;
+
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-column: 2/3;
+                margin: 1em;
+                text-align: unset;
+                gap: 1em;
+
+            }
+        }
+    }
+
+    .home-2 {
+        background-image: url(../assets/boeken/Alphabetum-ebraicum-vetus.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        height: 40em;
+        display: grid;
+        grid-template-rows: 1fr max-content;
+
+        .gradient2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 46.5em;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-image:
+                linear-gradient(180deg,
+                    var(--primary-detail-color)15%,
+                    transparent 85%);
+        }
+
+        h2 {
+            margin: 0;
+            padding: .5em 0 1em 1em;
+            font-weight: 400;
+            z-index: 2;
+            position: relative;
+        }
+
+        .button {
+            position: relative;
+            z-index: 2;
+            margin: 1em;
+            justify-self: end;
+            /* background-image: url("arrow-up-right.svg");
+            background-size: 1, 5em;
+            background-repeat: no-repeat;
+            background-position: 8.6em .5em; */
+            padding: 1em;
+        }
+
+    }
+}
