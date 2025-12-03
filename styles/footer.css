@@ -1,0 +1,67 @@
+footer {
+    background-image: url(../assets/footerbgsmallscreen-2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 1fr max-content 1fr;
+    padding: 0 2em;
+
+    color: var(--text-color-darkbg);
+    font-family: var(--ff-main);
+
+    @media (min-width: 700px) {
+        display: flex;
+        background-image: url(../assets/footerbg.png);
+        padding-bottom: 2em;
+        justify-content: space-evenly;
+        padding-top: 5em;
+    }
+
+    h3 {
+        font-size: var(--heading-small);
+    }
+
+    .footer-menu {
+         order: 1;
+
+
+        a {
+            display: flex;
+            flex-direction: column;
+            margin: .5em 0;
+        }
+
+        @media (min-width: 700px) {
+            order: 0;
+        }
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--text-color-darkbg);
+        font-family: var(--ff-main);
+        font-size: var(--body-small);
+    }
+
+    .email {
+        background-color: unset;
+        margin: 2em 0;
+    }
+
+    .icons {
+        margin-top: 1em;
+    }
+
+    .socials {
+        display: grid;
+    }
+
+    .openingstijden {
+        display: grid;
+    }
+
+
+}
