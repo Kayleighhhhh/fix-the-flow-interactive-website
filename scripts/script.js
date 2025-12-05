@@ -1,12 +1,12 @@
 
-// butten en nav vinden
+// button en nav vinden
 const menuBtn = document.querySelector(".navbtn");
 const deNav = document.querySelector(".menusmallscreen");
 
-// event voor op de butten toevoegen
+// event voor op de button toevoegen
 menuBtn.addEventListener("click", toggleMenu);
 
-// wat het event moet doen als er op de btn geklikt wordt
+// wat het event moet doen als er op de button geklikt wordt
 function toggleMenu() {
     deNav.classList.toggle("is-open");
     menuBtn.classList.toggle("is-open");
