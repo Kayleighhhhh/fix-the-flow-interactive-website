@@ -1,5 +1,3 @@
-# Code/design review user interaction 5-12-25 graag als task list in de comments van deze [issue](https://github.com/Kayleighhhhh/fix-the-flow-interactive-website/issues/3) zetten
-
 
 Ontwerp en maak een interactieve website voor een opdrachtgever.
 
