@@ -56,7 +56,7 @@ main {
 
 
         .filter {
-            width: 300%;
+            width: 100%;
             /* flex-grow: 1; */
             border-radius: 5px;
             border: .1em solid var(--text-color-lightbg);
@@ -65,7 +65,7 @@ main {
         }
 
         .search {
-            width: 300%;
+            width: 100%;
             display: flex;
             /* border: .1em black solid; */
             flex-grow: 1;
@@ -84,6 +84,7 @@ main {
         display: grid;
         gap: 3em;
         margin: 2em;
+        padding: unset;
         
 
         @media (min-width: 1000px) {
