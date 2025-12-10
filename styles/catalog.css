@@ -5,7 +5,7 @@
 body {
     margin: 0;
 }
-
+/* 
 ul[data-filter="Westcott"] li:not(.Westcott),
 ul[data-filter="Boehme"] li:not(.Boehme),
 ul[data-filter="anonymous"] li:not(.anonymous),
@@ -32,8 +32,11 @@ ul[data-filter="Stuttgart"] li:not(.Stuttgart),
 ul[data-filter="Franeker"] li:not(.Franeker)
 {
   display:none;
-}
+} */
 
+.hidden {
+  display:none;
+}
 
 main {
 
