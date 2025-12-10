@@ -41,43 +41,41 @@
 
             <select class="filter label-small">
                 <label>
-                    <option value="alles">Filter</option>
-                    <option value="alles">Alles</option>
-                    <hr />
-                    <optgroup label="Auteur">
-                        <option value="Westcott">Westcott</option>
-                        <option value="Boehme">Boehme</option>
-                        <option value="anonymous">anonymous</option>
-                        <option value="Oetinger">Oetinger</option>
-                        <option value="Drusius">Drusius</option>
-                        <option value="More">More</option>
-                    </optgroup>
-                    <hr />
-                    <option label="Gedigitaliseerde publicaties" style="font-weight: bold;"></option>
-                    <hr />
-                    <optgroup label="Jaar" class="jaar">
-                        <option value="eerder">Eerder</option>
-                        <option value="j1600-1699">1600-1699</option>
-                        <option value="j1700-1799">1700-1799</option>
-                        <option value="j1800-1899">1800-1899</option>
-                        <option value="j1900-1999">1900-1999</option>
-                    </optgroup>
-                    <hr />
-                    <optgroup label="Plaats van publicatie">
-                        <option value="London">London</option>
-                        <option value="Parijs">Parijs</option>
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="Stuttgart">Stuttgart</option>
-                        <option value="Franeker">Franeker</option>
-                    </optgroup>
+                    <option value="all">Auteur</option>
+                    <option value="Westcott">Westcott</option>
+                    <option value="Boehme">Boehme</option>
+                    <option value="anonymous">anonymous</option>
+                    <option value="Oetinger">Oetinger</option>
+                    <option value="Drusius">Drusius</option>
+                    <option value="More">More</option>
+                </label>
+            </select>
+            <select class="filter label-small">
+                <label>
+                    <option value="all">jaar</option>
+                    <option value="eerder">Eerder</option>
+                    <option value="j1600-1699">1600-1699</option>
+                    <option value="j1700-1799">1700-1799</option>
+                    <option value="j1800-1899">1800-1899</option>
+                    <option value="j1900-1999">1900-1999</option>
+                </label>
+            </select>
+            <select class="filter label-small">
+                <label>
+                    <option value="all">Plaats van publicatie</option>
+                    <option value="London">London</option>
+                    <option value="Parijs">Parijs</option>
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Stuttgart">Stuttgart</option>
+                    <option value="Franeker">Franeker</option>
                 </label>
             </select>
 
-        <search class="search label-small">
-            <label>
-                <input class="search" placeholder="Search..">
-            </label>
-        </search>
+            <search class="search label-small">
+                <label>
+                    <input class="search" placeholder="Search..">
+                </label>
+            </search>
         </form>
 
         <ul data-filter="filter">
@@ -98,7 +96,7 @@
                 </article>
             </li>
             <li class="anonymous j1600-1699 Amsterdam">
-                <article >
+                <article>
                     <img src="./assets/boeken/Eenige-philosophische-en-medicinale-tractaatjes.png" alt="boek cover">
                     <h2>Eenige philosophische en medicinale tractaatjes</h2>
                     <p>anonymous<br><br>1688<br><br>Amsterdam</p>
