@@ -30,7 +30,7 @@ function toggleMenu() {
 let allSelect = document.querySelectorAll('select');
 
 let deBoeken = document.querySelectorAll('li');
-console.log(deBoeken);
+// console.log(deBoeken);
 
 // de ul met alle articles zoeken
 // let deLijst = document.querySelector('ul');
@@ -80,4 +80,25 @@ deBoeken.forEach(eenBoek => {
     eenBoek.classList.add("hidden");
   }
 });
+}
+
+//change event
+//alleen titels tonen waar de zoektern in voor komt
+
+let titels = document.querySelectorAll("ul h2")
+// console.log(titels);
+let search = document.querySelector("input")
+// console.log(search);
+
+search.addEventListener('keyup', zoeken);
+
+function zoeken(e) {
+  titels.forEach(title => {
+    if (title.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
+      console.log(title.parentNode.parentNode);
+      title.parentNode.parentNode.style.display ='block';
+    } else {
+      title.parentNode.parentNode.style.display = 'none'
+    }
+  })
 }
