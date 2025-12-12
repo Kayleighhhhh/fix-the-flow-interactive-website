@@ -85,20 +85,20 @@ deBoeken.forEach(eenBoek => {
 //change event
 //alleen titels tonen waar de zoektern in voor komt
 
-let titels = document.querySelectorAll("ul h2")
-// console.log(titels);
+let items = document.querySelectorAll("ul li")
+console.log(items);
 let search = document.querySelector("input")
 // console.log(search);
 
 search.addEventListener('keyup', zoeken);
 
 function zoeken(e) {
-  titels.forEach(title => {
-    if (title.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
-      console.log(title.parentNode.parentNode);
-      title.parentNode.parentNode.style.display ='block';
+  items.forEach(item => {
+    if (item.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
+      console.log(items);
+      item.style.display ='block';
     } else {
-      title.parentNode.parentNode.style.display = 'none'
+      item.style.display = 'none'
     }
   })
 }
