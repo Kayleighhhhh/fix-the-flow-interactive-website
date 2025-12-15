@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+a[href="catalog.html"] {
+    color: var(--secondary-detail-color)
+}
+
 .hidden {
     display: none;
 }
@@ -132,8 +136,8 @@ main {
 
     ul {
         display: grid;
-        gap: 3em;
-        margin: 2em;
+        gap: 4em;
+        margin: 4em;
         padding: unset;
 
 
@@ -151,12 +155,11 @@ main {
     article {
         --art-layout:
             "heading img"
-            "paragraaf img"
-            "paragraaf button";
+            "paragraaf img";
 
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto max-content;
+        grid-template-rows: auto max-content;
 
         grid-template-areas: var(--art-layout);
 
@@ -193,7 +196,13 @@ main {
             text-shadow: 2px 2px 2px black;
         }
 
-        .meer {
+        &:hover {
+            transform: scale(1.05);
+            transition: .2s;
+            cursor: pointer;
+        }
+
+        /* .meer {
             grid-area: button;
             justify-self: end;
             align-self: end;
@@ -211,6 +220,6 @@ main {
             &:hover {
                 background-color: var(--secondary-detail-color);
             }
-        }
+        } */
     }
 }
