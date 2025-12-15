@@ -52,6 +52,8 @@ header {
 
     @media (min-width: 1000px) {
 
+        margin: 1em;
+
         .navbtn {
             display: none;
         }
@@ -63,9 +65,11 @@ header {
             max-width: 55rem;
             display: flex;
             justify-content: center;
+            align-self: center;
             padding: unset;
             border-radius: 5em;
             background-color: unset;
+            margin: unset;
         }
 
         .nav-button {
