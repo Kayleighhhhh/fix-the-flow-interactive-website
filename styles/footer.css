@@ -24,7 +24,7 @@ footer {
     }
 
     .footer-menu {
-         order: 1;
+        order: 1;
 
 
         a {
@@ -44,15 +44,31 @@ footer {
         color: var(--text-color-darkbg);
         font-family: var(--ff-main);
         font-size: var(--body-small);
+
+        &:hover {
+            color: var(--secondary-detail-color);
+        }
     }
 
     .email {
         background-color: unset;
         margin: 2em 0;
+
+        &:hover {
+            color: var(--secondary-detail-color);
+        }
     }
 
     .icons {
         margin-top: 1em;
+
+        a {
+            img {
+                &:hover {
+                    color: var(--secondary-detail-color);
+                }
+            }
+        }
     }
 
     .socials {
