@@ -22,7 +22,8 @@ main {
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        height: 50vw;
+        height: 100vh;
+        width: 100vw;
 
         display: grid;
         grid-template-rows: 1fr max-content;
@@ -38,7 +39,7 @@ main {
             background-image:
                 linear-gradient(180deg,
                     var(--primary-detail-color)15%,
-                    transparent 85%);
+                    transparent 75%);
         }
 
         h2 {
@@ -46,10 +47,15 @@ main {
             position: relative;
             margin: 0 1em;
             font-weight: 400;
-            grid-column: 1/3;
+            grid-row: 2/3;
+            background-color: #001B3299;
+            margin-right: 10em;
+            margin-bottom: .3em;
+            padding: .5em;
+            border-radius: .5em;
         }
 
-        .info {
+        /* .info {
             z-index: 2;
             position: relative;
             background-color: #001B3299;
@@ -70,7 +76,7 @@ main {
                 gap: 1em;
 
             }
-        }
+        } */
     }
 
     .home-2 {
@@ -78,9 +84,11 @@ main {
         background-repeat: no-repeat;
         background-position: right;
         background-size: cover;
-        height: 50vw;
+        height: 100vh;
+        width: 100vw;
         display: grid;
         grid-template-rows: 1fr max-content;
+        grid-template-columns: 1fr 1fr;
 
         .gradient2 {
             position: absolute;
@@ -90,30 +98,41 @@ main {
             top: 45em;
             background-origin: content-box;
             background-repeat: no-repeat;
-            background-image:
+            /* background-image:
                 linear-gradient(180deg,
                     var(--primary-detail-color)15%,
-                    transparent 85%);
-        }
+                    transparent 85%); */
+        } 
 
-        h2 {
-            margin: 0;
-            padding: .5em 0 1em 1em;
-            font-weight: 400;
+         h2 {
             z-index: 2;
             position: relative;
+            margin: 0 1em;
+            font-weight: 400;
+            grid-row: 2/3;
+            background-color: #001B3299;
+            margin-bottom: .3em;
+            padding: .5em;
+            border-radius: .5em;
+            align-self: flex-end;
         }
 
         .button {
             position: relative;
             z-index: 2;
             margin: 1em;
+            margin-right: 3em;
+            margin-bottom: 2em;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-top: 25em;
             justify-self: end;
             /* background-image: url("arrow-up-right.svg");
             background-size: 1, 5em;
             background-repeat: no-repeat;
             background-position: 8.6em .5em; */
-            padding: 1em;
+            padding: 1em 2em 1em 1em;
+
         }
 
     }
