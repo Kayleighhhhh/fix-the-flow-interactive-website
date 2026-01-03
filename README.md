@@ -5,8 +5,10 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the
 
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+embassy of the free mind met interactie
 
 ## Beschrijving
+ik heb deze sprint verder gewerkt aan de website voor embassy of the free mind an heb hier een interactie aan toegevoegd.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
