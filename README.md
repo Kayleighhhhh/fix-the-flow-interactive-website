@@ -20,10 +20,11 @@ catalogus met een minder drukke achtergrond en beter leesbare teksten.
 de filter interactie
 
 <!-- Voeg een mooie poster visual toe 📸 -->
-
+link naar de [live website](https://kayleighhhhh.github.io/fix-the-flow-interactive-website/)
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
+in de html heb ik de informatie die op de website staat gezet en duidelijke classes gegeven om het te stylen met css.
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 ## Bronnen
